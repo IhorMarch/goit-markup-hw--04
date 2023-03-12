@@ -20,10 +20,11 @@ body{
 .list {list-style-type: none;
 padding: 0;
 margin: 0;}
+
 .container{
 margin-left: auto;
 margin-right: auto;
-width: 1158px;
+max-width: 1158px;
 outline: 2px solid tomato;
 padding-left: 15px;
 padding-right: 15px;
@@ -132,10 +133,17 @@ color: var(--hover);
 }
 /* HERO */
 .hero{
-    background-color: var(--Dark);
+    background-color: var(--Dark);max-width: 1440px;
     text-align: center;
     padding-top: 188px;
     padding-bottom: 188px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
+    url(../img/people-office.jpg);
+    background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    
+
 }
 .hero-title{
     color: var(--main-background);
@@ -254,7 +262,10 @@ font-family: 'Roboto';
 .team-list .item:not(:last-child){
     margin-right: 24px;
 }
-
+/* CLIENTS */
+.client{
+    padding-top: 130px;
+}
 /* FOOTER */
 .footer{background-color: var(--Dark);
 padding-top: 100px;
