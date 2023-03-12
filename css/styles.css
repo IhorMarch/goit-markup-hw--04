@@ -1,0 +1,323 @@
+:root{--main-colour-text:#434455;
+--Dark: #2E2F42;
+--main-background: #FFFFFF;
+--primary-Brand: #4D5AE5;
+--subtle-Text:#8E8F99;
+--accent:#E7E9FC;
+--Light:#F4F4FD;
+--hover:#404BBF;
+}
+
+
+body{
+    color: var(--main-colour-text);
+    background-color: var(--main-background);
+    font-family: 'Roboto', sans-serif;
+    
+}
+.link {text-decoration: none;}
+
+.list {list-style-type: none;
+padding: 0;
+margin: 0;}
+.container{
+margin-left: auto;
+margin-right: auto;
+width: 1158px;
+outline: 2px solid tomato;
+padding-left: 15px;
+padding-right: 15px;
+}
+.section{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;}
+
+/* HEADER */
+.header{
+    border-bottom: 1px solid var(--accent);
+ 
+}
+.main-nav{
+    display: flex;
+    align-items: center;
+}
+.top-nav{
+    display: flex;
+    margin-left: 76px;
+}
+.logo {
+    color: var(--primary-Brand);
+    font-family: 'Raleway';
+        
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.33;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        display: block;
+        padding-top: 24px;
+            padding-bottom: 24px;
+}
+
+.logo-nav {
+    color: var(--Dark);
+    
+    
+}
+.logo-footer{
+    color: var(--Light);
+    line-height: 1.17;
+    
+}
+.footer .logo{
+line-height: 1.17;
+margin-bottom: 16px;
+
+}
+.site-nav{
+    display: flex;
+    
+}
+.site-nav .link{
+    color: var(--Dark);
+     font-weight: 500;
+    font-size: 16px;
+     line-height: 1.5; 
+     letter-spacing: 0.02em;
+     display: block;
+     padding-top: 24px;
+     padding-bottom: 24px;
+        
+}
+.site-nav .item:not(:last-child){
+    margin-right: 40px;
+}
+.site-nav .link:hover, .site-nav .link:focus{
+color: var(--hover);
+}
+.link.current{
+    color: var(--hover);
+}
+.address{
+    display: flex;
+    margin-left: 332px;
+        font-style: normal;
+}
+.address .link{color: var(--main-colour-text);
+font-size: 16px;
+    line-height: 1.5;
+letter-spacing: 0.02em;
+display: block;
+padding-top: 24px;
+padding-bottom: 24px;}
+    
+.address .link:hover, address .link:focus{
+color: var(--hover);
+ 
+}
+.address .item:not(:last-child){
+    margin-right: 40px;
+}
+/* HERO */
+.hero{
+    background-color: var(--Dark);
+    text-align: center;
+    padding-top: 188px;
+    padding-bottom: 188px;
+}
+.hero-title{
+    color: var(--main-background);
+    font-weight: 700;
+        font-size: 56px;
+        line-height:1.07;
+        text-align: center;
+        letter-spacing: 0.02em;
+        margin-bottom: 48px;
+        width: 496px;
+        margin-left: auto;
+        margin-right: auto;
+         }
+.hero-button{color: var(--main-background);
+background-color: var(--primary-Brand);
+font-family: 'Roboto';
+    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    background: var(--primary-Brand);
+    padding: 16px 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;}
+.hero-button:hover, .hero-button:focus{
+    background-color: var(--hover)
+}
+
+/* Features */
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+.features{
+    display: flex;
+}
+.title{
+    color: var(--Dark);
+    
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        
+}
+.features-title{
+    
+        margin-bottom: 8px;
+}
+.features-text{
+    font-size: 16px;
+    line-height: 1.5;
+   letter-spacing: 0.02em;
+   margin-bottom: 0px;
+   }
+.features .item:not(:last-child){
+    margin-right: 24px;
+}
+
+
+/* ABOUT */
+.about {
+    padding-top: 0px;}
+    .list-about{
+        display: flex;
+    }
+    .list-about .item:not(:last-child){
+        margin-right: 24px;
+    }
+.section-title {
+    color: var(--Dark);
+    font-family: 'Roboto';
+        
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        text-align: center;
+        text-transform: capitalize;
+         margin-bottom: 72px;
+      }
+
+/* TEAM */
+.section.team{background-color: var(--Light);}
+.team-description{
+    padding: 32px 16px;
+    background: var(--main-background);
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+        border-radius: 0px 0px 4px 4px;
+}
+.team-list{
+    display: flex;
+}
+.team-text {
+    font-size: 16px;
+    line-height: 1.5px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    
+
+}
+.team-list .title{
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.team-list .item:not(:last-child){
+    margin-right: 24px;
+}
+
+/* FOOTER */
+.footer{background-color: var(--Dark);
+padding-top: 100px;
+padding-bottom: 100px;}
+.footer-text{ color: var(--accent);
+line-height: 1.5;
+letter-spacing: 0.02em;
+width: 264px;}
+/* .footer-logo{
+    margin-bottom: 16px;
+} */
+/* Portfolio */
+.buttons{
+    padding-top: 96px;
+    padding-bottom: 72px;
+}
+.button-list{
+    display: flex;
+    justify-content: center;
+}
+.button{
+    color: var(--primary-Brand);
+    background-color: var(--Light);
+    
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.04em;
+        border: 1px solid var(--accent);
+        border-radius: 4px;
+        padding: 12px 24px;
+       
+}
+.button:hover, .button:focus{
+    color: var(--main-background);
+    background-color: var(--hover);
+}
+.button-list .item:not(:last-child){
+    margin-right: 24px;
+}
+.examples{
+    padding-top: 0px;
+}
+.examples-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.examples-list{
+    flex-basis: calc((100%-2*24px)/3);
+}
+.examples-text{
+    color: var(--main-colour-text);
+    letter-spacing: 0.02em;
+    
+}
+.examples-list .title{
+    margin-bottom: 8px;
+}
+.examples-border{
+    border: 1px solid var(--accent);
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
