@@ -45,6 +45,10 @@ img {
     width: 100%;
     height: auto;}
 
+        .container-flex {
+            display: flex;
+        }
+
 /* HEADER */
 .header{
     border-bottom: 1px solid var(--accent);
@@ -133,10 +137,13 @@ color: var(--hover);
 }
 /* HERO */
 .hero{
-    background-color: var(--Dark);max-width: 1440px;
+    background-color: var(--Dark);
+    max-width: 1440px;height: 600px;
     text-align: center;
     padding-top: 188px;
     padding-bottom: 188px;
+    margin-left: auto;
+        margin-right: auto;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
     url(../img/people-office.jpg);
     background-repeat: no-repeat;
@@ -251,6 +258,7 @@ font-family: 'Roboto';
     line-height: 1.5px;
     letter-spacing: 0.02em;
     text-align: center;
+    margin-bottom: 8px;
     
 
 }
@@ -262,9 +270,32 @@ font-family: 'Roboto';
 .team-list .item:not(:last-child){
     margin-right: 24px;
 }
+.socisal-list{
+    display: flex;
+   
+    justify-content: center;
+}
+.social-list-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--primary-Brand);
+}
+.social-list-item:not(:last-child){margin-right: 24px;}
 /* CLIENTS */
 .client{
     padding-top: 130px;
+}
+.client-list{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+.client-list .item{
+   margin-right: 24px;
 }
 /* FOOTER */
 .footer{background-color: var(--Dark);
@@ -274,9 +305,29 @@ padding-bottom: 100px;}
 line-height: 1.5;
 letter-spacing: 0.02em;
 width: 264px;}
-/* .footer-logo{
-    margin-bottom: 16px;
-} */
+.footer-list{
+    display: flex;
+}
+.footer-left{margin-right: 120px;
+padding-bottom: 100px;
+padding-top: 100px;}
+.footer-right{
+    padding-bottom: 100px;
+        padding-top: 100px;
+    }
+.footer-right-title{
+        font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+             color:var(--main-background);
+    }
+
+
+
+
 /* Portfolio */
 .buttons{
     padding-top: 96px;
