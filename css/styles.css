@@ -25,7 +25,7 @@ margin: 0;}
 margin-left: auto;
 margin-right: auto;
 max-width: 1158px;
-outline: 2px solid tomato;
+/* outline: 2px solid tomato; */
 padding-left: 15px;
 padding-right: 15px;
 }
@@ -91,6 +91,8 @@ img {
 .footer .logo{
 line-height: 1.17;
 margin-bottom: 16px;
+padding-bottom: 0px;
+padding-top: 0px;
 
 }
 .site-nav{
@@ -224,7 +226,7 @@ font-family: 'Roboto';
     display: flex;
    justify-content: center;
    align-items: center;
-    background: #F4F4FD;
+    background: var(--Light);
         border-radius: 4px;
         padding: 24px 100px;margin-bottom: 8px;
 }
@@ -261,6 +263,7 @@ font-family: 'Roboto';
         box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
         border-radius: 0px 0px 4px 4px;
         height: 168px;
+        margin: 0;
 }
 .team-list{
     display: flex;
@@ -273,7 +276,7 @@ font-family: 'Roboto';
 
 .team-text {
     font-size: 16px;
-    line-height: 1.5px;
+    line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
     margin-bottom: 8px;
@@ -322,23 +325,28 @@ justify-content: center;
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 1px solid #8E8F99;
+        border: 1px solid var(--subtle-Text);
         border-radius: 4px;
         padding: 16px 32px;
  }
  .client-link:hover, 
  .client-link:focus{
-    /* border: 1px solid #404BBF;
-    border-radius: 4px; */
-    border-color: #404BBF;
- }
+ 
+    border-color:var(--hover);
+    color:var(--hover);
+ } 
  .client-icon{
-    fill:#8E8F99;
+    fill:var(--subtle-Text);
  }              
- .client-icon:hover,
+ /* .client-icon:hover,
  .client-icon:focus{
-    fill: #404BBF;
- }
+    fill: var(--hover);} */
+ 
+.client-link:hover .client-icon,
+.client-link:focus .client-icon
+{
+fill: var(--hover);
+}
 
 /* FOOTER */
 
